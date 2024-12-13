@@ -1,12 +1,10 @@
 import { Text, View, StyleSheet } from "react-native";
-import { Link } from "expo-router";
+import colors from "@/constants/colors";
 
-export default function Index() {
+export default function Home() {
   return (
     <View style={styles.container}>
-      <Link href="/Home">
-        <Text style={{ color: "black" }}>Rete sak gen la</Text>
-      </Link>
+      <Text style={styles.text}>Home working</Text>
     </View>
   );
 }
@@ -16,6 +14,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "white",
+    backgroundColor: colors.primary,
+  },
+
+  text: {
+    color: "black",
   },
 });
